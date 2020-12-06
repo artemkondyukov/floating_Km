@@ -1,2 +1,4 @@
 #!/bin/bash
-pip install -r requirements.txt
+yum -y update
+yum -y install python36 python36-pip
+pip-3.6 install -r /app/requirements.txt

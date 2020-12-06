@@ -1,2 +1,5 @@
 #!/bin/bash
-kill -9 $(ps -ax | grep streamlit | awk '{ print $1 }' | head -1)
+isExistApp=`pgrep streamlit`
+if [[ $isExistApp ]]; then
+    kill -9 $(ps -ax | grep streamlit | awk '{ print $1 }' | head -1)
+fi

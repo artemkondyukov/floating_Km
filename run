@@ -1,2 +1,2 @@
 #!/bin/bash
-streamlit run main.py
+/usr/local/bin/streamlit run /app/main.py > /app/run.out 2>/app/run.err &

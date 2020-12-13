@@ -56,7 +56,7 @@ class FloatingKmGUI:
         )
 
         st.text(os.environ["DEPLOYMENT_ID"])
-        st.text(os.environ["CODEBUILD_RESOLVED_SOURCE_VERSION"])
+        st.text(str(os.environ.keys()))
 
     def pyplot(self, fig):
         st.pyplot(fig)

@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 
 
@@ -53,6 +54,9 @@ class FloatingKmGUI:
             value=.15,
             step=1E-3
         )
+
+        st.text(os.environ["DEPLOYMENT_ID"])
+        st.text(os.environ["CODEBUILD_RESOLVED_SOURCE_VERSION"])
 
     def pyplot(self, fig):
         st.pyplot(fig)
